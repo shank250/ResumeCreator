@@ -4,8 +4,9 @@ from langchain_core.prompts import PromptTemplate
 from langchain_anthropic import AnthropicLLM, ChatAnthropic
 from langchain_core.runnables.utils import ConfigurableField
 
-model = ChatAnthropic(temperature=0, model='claude-3-opus-20240229',       anthropic_api_key="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"
-    )
+model = ChatAnthropic(temperature=0, 
+                      model='claude-3-opus-20240229', 
+                      anthropic_api_key="EnterYourAPIKey")
 
 # Define the chains to be chained together
 # chain1 = ...
