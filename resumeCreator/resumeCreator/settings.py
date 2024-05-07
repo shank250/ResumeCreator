@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-cpbbd(^@@7fjgufdnyll$47dkt9^$j)f*4fkpcr1b57%=utg8r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# in allowed host here enter your domain name like in our case it was 'resumecreators.azurewebsites.net'  , We are writing '*' SO IT WORKS UNIVERSALLY IT IS NOT ADVISED AS PER SECURITY POINT OF VIEW
+ALLOWED_HOSTS = ['*]
 
 
 # Application definition
@@ -121,4 +122,7 @@ STATIC_URL = 'static/'
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField' 
+
+# IN CSRF_TRUSTED_ORIGINS PUT YOUR URL FROM WHICH FORM WILL BE SENDING DATA IN OUR CAS IT WAS 'https://resumecreators.azurewebsites.net/' . 
+CSRF_TRUSTED_ORIGINS = ['resumecreators.azurewebsites.net','*']
